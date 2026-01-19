@@ -1,0 +1,15 @@
+{
+  "default_interface": "wlan0",
+  "default_wordlist": "/usr/share/wordlists/rockyou.txt",
+  "scan_timeout": 10,
+  "deauth_packets": 10,
+  "output_dir": "/tmp/wifi-demon",
+  "enable_logging": true,
+  "log_file": "/var/log/wifi-demon.log",
+  "colors": {
+    "success": "green",
+    "error": "red",
+    "warning": "yellow",
+    "info": "cyan"
+  }
+}
