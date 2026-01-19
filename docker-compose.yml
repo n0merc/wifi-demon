@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  wifi-demon:
+    build: .
+    container_name: wifi-demon
+    network_mode: host
+    privileged: true
+    volumes:
+      - ./handshakes:/handshakes
+      - ./wordlists:/wordlists
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    command: ["python3", "wifi_demon.py"]
